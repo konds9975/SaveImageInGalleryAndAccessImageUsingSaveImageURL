@@ -15,6 +15,7 @@
 		DADCF2F120E259500021A6AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADCF2EF20E259500021A6AF /* LaunchScreen.storyboard */; };
 		DADCF2FC20E259500021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCF2FB20E259500021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURLTests.swift */; };
 		DADCF30720E259500021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCF30620E259500021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURLUITests.swift */; };
+		DADCF31520E259890021A6AF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCF31420E259890021A6AF /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DADCF30220E259500021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveImageInGalleryAndAccessImageUsingSaveImageURLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADCF30620E259500021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageInGalleryAndAccessImageUsingSaveImageURLUITests.swift; sourceTree = "<group>"; };
 		DADCF30820E259500021A6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADCF31420E259890021A6AF /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		DADCF2E220E2594D0021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURL */ = {
 			isa = PBXGroup;
 			children = (
+				DADCF31420E259890021A6AF /* File.swift */,
 				DADCF2E320E2594D0021A6AF /* AppDelegate.swift */,
 				DADCF2E520E2594D0021A6AF /* ViewController.swift */,
 				DADCF2E720E2594D0021A6AF /* Main.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADCF2E620E2594D0021A6AF /* ViewController.swift in Sources */,
+				DADCF31520E259890021A6AF /* File.swift in Sources */,
 				DADCF2E420E2594D0021A6AF /* AppDelegate.swift in Sources */,
 				DADCF2EC20E2594D0021A6AF /* SaveImageInGalleryAndAccessImageUsingSaveImageURL.xcdatamodeld in Sources */,
 			);
