@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qlk-az-rul">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,41 +22,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNW-RN-BbT">
-                                <rect key="frame" x="76" y="254" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNW-RN-BbT">
+                                <rect key="frame" x="20" y="328" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QYl-jm-P8R"/>
+                                </constraints>
                                 <state key="normal" title="Take Photo"/>
                                 <connections>
                                     <action selector="takePhoto:" destination="GUz-wR-bZ7" eventType="touchUpInside" id="xyB-aj-fnU"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QiP-Jw-28b">
-                                <rect key="frame" x="16" y="8" width="208" height="224"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QiP-Jw-28b">
+                                <rect key="frame" x="20" y="84" width="335" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="lDo-bs-nO2"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGS-rC-rFd">
-                                <rect key="frame" x="75" y="306" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGS-rC-rFd">
+                                <rect key="frame" x="20" y="378" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CY7-wL-cH5"/>
+                                </constraints>
                                 <state key="normal" title="Save Photo"/>
                                 <connections>
                                     <action selector="savePhoto:" destination="GUz-wR-bZ7" eventType="touchUpInside" id="NeO-b8-Xaw"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-7N-13D">
-                                <rect key="frame" x="67.5" y="441" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="HCT-Zl-Uns"/>
-                                    <constraint firstAttribute="height" constant="128" id="HZx-wf-Fr0"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="428" width="335" height="219"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MfC-ng-t4L" firstAttribute="top" secondItem="Fap-7N-13D" secondAttribute="bottom" constant="98" id="m5e-21-gEw"/>
-                            <constraint firstItem="Fap-7N-13D" firstAttribute="centerX" secondItem="HR0-Bn-sPM" secondAttribute="centerX" id="sZy-hq-eHf"/>
+                            <constraint firstItem="TEm-oJ-iPM" firstAttribute="trailing" secondItem="QiP-Jw-28b" secondAttribute="trailing" constant="20" id="6kk-8O-wTe"/>
+                            <constraint firstItem="Fap-7N-13D" firstAttribute="leading" secondItem="TEm-oJ-iPM" secondAttribute="leading" constant="20" id="B6O-YJ-J9Q"/>
+                            <constraint firstItem="iGS-rC-rFd" firstAttribute="leading" secondItem="TEm-oJ-iPM" secondAttribute="leading" constant="20" id="NKt-Bf-NDp"/>
+                            <constraint firstItem="TEm-oJ-iPM" firstAttribute="trailing" secondItem="Fap-7N-13D" secondAttribute="trailing" constant="20" id="Qiz-Tc-SJW"/>
+                            <constraint firstItem="rNW-RN-BbT" firstAttribute="leading" secondItem="TEm-oJ-iPM" secondAttribute="leading" constant="20" id="R5g-xq-j7e"/>
+                            <constraint firstItem="iGS-rC-rFd" firstAttribute="top" secondItem="rNW-RN-BbT" secondAttribute="bottom" constant="20" id="VAB-jp-AMP"/>
+                            <constraint firstItem="TEm-oJ-iPM" firstAttribute="trailing" secondItem="rNW-RN-BbT" secondAttribute="trailing" constant="20" id="aYL-7S-OI4"/>
+                            <constraint firstItem="MfC-ng-t4L" firstAttribute="top" secondItem="Fap-7N-13D" secondAttribute="bottom" constant="20" id="bj5-sq-eVL"/>
+                            <constraint firstItem="QiP-Jw-28b" firstAttribute="top" secondItem="nhK-eA-rGd" secondAttribute="bottom" constant="20" id="kZe-Vp-m1X"/>
+                            <constraint firstItem="TEm-oJ-iPM" firstAttribute="trailing" secondItem="iGS-rC-rFd" secondAttribute="trailing" constant="20" id="ktv-l2-D94"/>
+                            <constraint firstItem="QiP-Jw-28b" firstAttribute="leading" secondItem="TEm-oJ-iPM" secondAttribute="leading" constant="20" id="to6-e6-vKf"/>
+                            <constraint firstItem="rNW-RN-BbT" firstAttribute="top" secondItem="QiP-Jw-28b" secondAttribute="bottom" constant="20" id="u0U-VB-enY"/>
+                            <constraint firstItem="Fap-7N-13D" firstAttribute="top" secondItem="iGS-rC-rFd" secondAttribute="bottom" constant="20" id="ya2-Aa-DrS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TEm-oJ-iPM"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LEE-Fo-wQY"/>
                     <connections>
                         <outlet property="image3" destination="Fap-7N-13D" id="ugh-3e-58Z"/>
                         <outlet property="myImg" destination="QiP-Jw-28b" id="ZxP-iT-Vog"/>
@@ -64,7 +78,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nw4-Q0-FPH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="213"/>
+            <point key="canvasLocation" x="1008.8" y="212.74362818590706"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kTK-af-I4o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qlk-az-rul" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZPH-um-gpg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GUz-wR-bZ7" kind="relationship" relationship="rootViewController" id="qiV-0F-AJk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jiv-z0-JHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="212.74362818590706"/>
         </scene>
     </scenes>
 </document>

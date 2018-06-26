@@ -46,13 +46,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func savePhoto(_ sender: AnyObject) {
-        
-        
-        
-        //        ALAssetsLibrary().writeImage(toSavedPhotosAlbum: myImg.image?.cgImage, orientation: ALAssetOrientation(rawValue: myImg.image!.imageOrientation.rawValue)!,
-        //                                                       completionBlock:{ (path:URL!, error:Error!) -> Void in
-        //                                                        print("\(path)")
-        //        })
+       
         PHPhotoLibrary.shared().savePhoto(image: myImg.image!, albumName: "Fabbit"){ (image)in
             
             print(PHPhotoLibrary.shared().getURL(ofPhotoWith: image!, completionHandler: { (url) in
@@ -69,10 +63,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 
             }))
         }
-        
-        //        let imageData = UIImagePNGRepresentation(myImg.image!)
-        //        let compresedImage = UIImage(data: imageData!)
-        //        UIImageWriteToSavedPhotosAlbum(compresedImage!, nil, nil, nil)
         
         let alert = UIAlertController(title: "Saved", message: "Your image has been saved", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
